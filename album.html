@@ -203,15 +203,17 @@
 
         <div class="col pr-0">
           <div class="jumbotron jumbotron-fluid pb-3">
-            <div class="container-fluid ml-3 mt-3 d-flex">
-              <img
-                class="main-image"
-                aria-hidden="false"
-                draggable="false"
-                loading="eager"
-                src="https://i.scdn.co/image/ab67706f000000032a5a18a2690eb5a0e07d5665"
-                alt="Top Throwbacks of 2020"
-              />
+            <div class="container-fluid ml-3 mt-3 d-flex album-cover">
+              <!-- <div>
+                <img
+                  class="main-image"
+                  aria-hidden="false"
+                  draggable="false"
+                  loading="eager"
+                  src="https://i.scdn.co/image/ab67706f000000032a5a18a2690eb5a0e07d5665"
+                  alt="Top Throwbacks of 2020"
+                />
+              </div>
               <div class="main-info d-inline-block pl-4 pt-5">
                 <h6 class="d-inline-block" style="color: white">Playlist</h6>
                 <h1 class="display-4 Throwbacks">
@@ -231,10 +233,13 @@
                     ><li>52 songs, 3 hr 30 min</li></small
                   >
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- ----------------- NAV BAR ----------------- -->
-            <div class="row pt-3 pb-3 px-3 justify-content-between navrow">
+            <div
+              class="row pt-3 pb-3 px-3 justify-content-between navrow"
+              style="z-index: 12"
+            >
               <div class="btn-nav d-flex">
                 <div class="buttom-nav-left">
                   <svg
@@ -285,8 +290,8 @@
                 <div class="avatar-nav d-flex justify-content-between pb-1">
                   <div class="pl-1">
                     <img
-                      src="./assets/yonatan.jpg"
-                      class="img-fluid img-avatar yoni rounded-circle"
+                      src="./assets/muriloavatar.png"
+                      class="img-fluid img-avatar"
                       alt=""
                     />
                   </div>
@@ -344,7 +349,11 @@
                         </svg>
                       </div>
                       <div class="hide-over">
-                        <p class="mb-0 py-2">Log out</p>
+                        <p class="mb-0 py-2">
+                          <a href="./login.html" class="a-changes-menu"
+                            >Log out</a
+                          >
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -382,31 +391,31 @@
           <section class="all-songs">
             <div class="container-songs mt-5">
               <div class="row song-info pt-1">
-                <div class="col-4 d-flex pt-1 pl-5">
-                  <h6>#</h6>
-                  <h6 class="pl-3">TITLE</h6>
+                <div class="col-4 d-flex">
+                  <div class="style-menu-sticy">#</div>
+                  <p class="hide-num mb-2 padding-list" style="width: 10px"></p>
+                  <div class="pl-3 style-menu-sticy">TITLE</div>
                 </div>
-                <div class="col-3 albums-align">ALBUM</div>
-                <div class="col-3 added-align">DATE ADDED</div>
-                <div class="col-2">
+                <div class="col-3 albums-align style-menu-sticy">ALBUM</div>
+                <div class="col-3 added-align style-menu-sticy">DATE ADDED</div>
+                <div class="col-2 pl-4 d-flex align-items-center">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path
+                      class="style-menu-sticy"
                       d="M7.999 3H6.999V7V8H7.999H9.999V7H7.999V3ZM7.5 0C3.358 0 0 3.358 0 7.5C0 11.642 3.358 15 7.5 15C11.642 15 15 11.642 15 7.5C15 3.358 11.642 0 7.5 0ZM7.5 14C3.916 14 1 11.084 1 7.5C1 3.916 3.916 1 7.5 1C11.084 1 14 3.916 14 7.5C14 11.084 11.084 14 7.5 14Z"
                       fill="currentColor"
                     ></path>
                   </svg>
                 </div>
+                <div class="col-11 margin-info margin-info2"></div>
+                <div class="col-1 margin-info margin-info2"></div>
               </div>
 
-              <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+              <!-- <div class="row rowz ml-3 mr-4 pt-1 mb-2">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
-                    onclick="playSong()"
                   >
-                    <audio
-                      src="./audios/Ed_Sheeran_-_Galway_Girl_Audio_-_128K_MP3.mp3"
-                    ></audio>
                     <p class="hide-num mb-2 padding-list" style="width: 10px">
                       1
                     </p>
@@ -451,7 +460,7 @@
               </div>
 
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -498,7 +507,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -545,7 +554,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -592,7 +601,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -639,7 +648,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -686,7 +695,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -733,7 +742,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -780,7 +789,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -827,7 +836,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -874,7 +883,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -921,7 +930,7 @@
                 </div>
               </div>
               <div class="row rowz ml-3 mr-4 pt-1 mb-2">
-                <div class="col-4 padding-img d-flex pt-1 pl-5">
+                <div class="col-4 padding-img d-flex pt-1">
                   <div
                     class="num-icon d-flex position-relative play-button-list"
                   >
@@ -966,7 +975,7 @@
                     <div class="dots text-white">...</div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -979,33 +988,34 @@
         <div class="col d-flex no-gutters pl-0">
           <div class="row row-bottom">
             <div class="col img-nav-bottom">
-              <img
+              <div class="card-img-bottom"></div>
+              <!-- <img
                 src="./img/smalldrake.jpg"
                 class="card-img-bottom img-fluid"
                 alt="..."
-              />
+              /> -->
               <div class="photo-play">
                 <i class="fas fa-chevron-up"></i>
               </div>
             </div>
             <div class="col d-flex direction-bar pl-3 pt-1">
-              <h6 class="pt-4 mb-0 h6-bottom">Survival</h6>
+              <h6 class="pt-4 mb-0 h6-bottom text-nowrap">Survival</h6>
               <p class="mb-0 p-bottom">Drake</p>
-              <div class="col position-absolute heart-bottom">
-                <svg
-                  role="img"
-                  height="16"
-                  width="16"
-                  viewBox="0 0 16 16"
-                  class="Svg-ulyrgf-0 ghlXvf"
-                >
-                  <path
-                    d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"
-                  ></path>
-                </svg>
-              </div>
             </div>
-            <div class="col window-btn-bottom">
+            <div class="col heart-bottom d-flex align-items-center">
+              <svg
+                role="img"
+                height="16"
+                width="16"
+                viewBox="0 0 16 16"
+                class="Svg-ulyrgf-0 ghlXvf"
+              >
+                <path
+                  d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"
+                ></path>
+              </svg>
+            </div>
+            <div class="col window-btn-bottom d-flex align-items-center">
               <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                 <g class="currentColor" fill-rule="evenodd">
                   <path
@@ -1044,13 +1054,8 @@
                 <path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path>
               </svg>
             </div>
-            <div class="d-inline-block ml-3 pt-4">
-              <div class="play-bottom" onclick="playSongBar()">
-                <audio
-                  class="audio-two"
-                  src="./audios/Ed_Sheeran_-_Give_Me_Love_Official_Video.mp3"
-                ></audio>
-              </div>
+            <div class="d-inline-block ml-3 pt-3">
+              <div class="play-bottom"><i class="fas fa-play"></i></div>
             </div>
             <div class="d-inline-block ml-3 queue-btn">
               <svg
@@ -1077,19 +1082,28 @@
               </svg>
             </div>
           </div>
-          <div class="d-flex justify-content-center mt-3">
-            <input type="range" min="0" max="100" value="90" step="10" />
+          <div class="d-flex mt-3">
+            <div id="current-duration" style="color: white">00:00</div>
+            <input
+              type="range"
+              min="0"
+              max="0"
+              step="1"
+              id="seekbar"
+              class="w-100"
+            />
+            <div id="total-duration" style="color: white">00:00</div>
           </div>
         </div>
         <div class="col">
-          <div class="d-flex last-col pr-5">
+          <div class="d-flex last-col pr-5 align-items-center">
             <div class="d-inline-block align-items-center queue-btn">
               <i class="svg-color bi bi-border-width"></i>
             </div>
             <div class="d-inline-block ml-3 queue-btn">
               <i class="svg-color fas fa-tablet-alt"></i>
             </div>
-            <div class="d-inline-block ml-3 queue-btn">
+            <div class="d-inline-block ml-3 queue-btn" id="vol">
               <svg
                 class="svg-color"
                 role="presentation"
@@ -1110,8 +1124,10 @@
                 <div class="form-group">
                   <input
                     type="range"
-                    class="form-control-range"
-                    id="formControlRange"
+                    min="0"
+                    max="100"
+                    id="vol-control"
+                    step="1"
                   />
                 </div>
               </form>
@@ -1120,7 +1136,6 @@
         </div>
       </div>
     </div>
-
     <div style="height: 150px"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
@@ -1199,20 +1214,38 @@
           }
         });
       });
+      jQuery(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 368) {
+            $(".song-info").addClass("margin-song");
+          } else {
+            $(".song-info").removeClass("margin-song");
+          }
+        });
+      });
+      jQuery(function () {
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 368) {
+            $(".margin-info2").removeClass("margin-info");
+          } else {
+            $(".margin-info2").addClass("margin-info");
+          }
+        });
+      });
     </script>
 
     <!-- <script>
       window.onload = function () {
         const el = document.querySelector(".range");
-
         el.addEventListener("change", (e) => {
-
           el.style.setProperty("--value", el.value);
           el.style.setProperty("--min", el.min === "" ? "0" : el.min);
           el.style.setProperty("--max", el.max === "" ? "100" : el.max);
           el.style.setProperty("--value", el.value);
         });
     </script> -->
+    <!-- <script src="index.js" type="module"></script> -->
+    <script src="album.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

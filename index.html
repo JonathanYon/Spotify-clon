@@ -26,6 +26,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script src="index.js"></script>
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -330,6 +332,23 @@
               class="container main-container pl-4 mt-5"
               style="max-width: 100%"
             >
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  onkeydown="userInput(event)"
+                />
+                <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                  onclick="fetchData()"
+                >
+                  Search
+                </button>
+              </form>
+
               <h5 class="pt-4">Good Morning</h5>
               <div class="row px-3 pt-2">
                 <div class="col px-0 mr-3">
@@ -524,8 +543,8 @@
                 </div>
               </div>
 
-              <div class="row px-3 manual-query">
-                <div class="col pl-0">
+              <div class="row px-3 manual-query" id="card-rows">
+                <!-- <div class="col pl-0">
                   <div class="card h-100">
                     <div class="position-relative">
                       <img
@@ -645,7 +664,7 @@
                       <p class="card-text text-white-50">Artist</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
 
               <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
