@@ -62,10 +62,3 @@ theRes.forEach(card => {
 }
 window.onload = fetchData()
 
-// let imgContain = document.getElementById("container-img");
-//       window.onload = () => {
-//         let albumId = new URLSearchParams(window.location.search).get(
-//           "albumId"
-//         );
-//         console.log(albumId);
-//       };
