@@ -1,10 +1,11 @@
 
 
-
-let input = "shakira"
+let lastTypedInput = localStorage.getItem("input")
+let input = lastTypedInput ? lastTypedInput : "Sia";
 const userInput = (event) => {
  
   input = event.target.value.toLowerCase()
+  localStorage.setItem("input", event.target.value)
   console.log(input)
   if (event.key === "Enter"){
     fetchData()

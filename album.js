@@ -1,13 +1,4 @@
 
-
-
-
-            
-
-
-
-
-
       
     
   window.onload = () => {
@@ -58,12 +49,7 @@
       </div>
     </div>`
   
-      // let trackImg = document.querySelector(".imgg")
-      // console.log(trackImg)
-      // trackImg.innerHTML = `
-      // <img class="img-thumb" src="${response.cover_small}" alt="" />
-      // <p class="album-names mb-lg-2 padding-list">${response.title}</p>
-      // `
+     
 
 
     let songsRow = document.querySelector(".container-songs")

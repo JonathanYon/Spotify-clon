@@ -198,7 +198,7 @@ p img {
 }
 
 .img-bgd {
-  background-image: url("./img/Adam-Lambert-ALBUM-COVER.jpg");
+  /* background-image: url("./img/Adam-Lambert-ALBUM-COVER.jpg"); */
   position: relative;
   min-height: 350px;
   background-attachment: fixed;
